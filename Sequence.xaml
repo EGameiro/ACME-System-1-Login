@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Sequence" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="775,1178" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Sequence" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="775,1303" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -56,30 +56,31 @@
       <AssemblyReference>UiPath.Activities.Contracts</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Sequence" sap:VirtualizedContainerService.HintSize="620,1113" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Sequence" sap:VirtualizedContainerService.HintSize="620,1238" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence DisplayName="Web" sap:VirtualizedContainerService.HintSize="558,1002" sap2010:WorkflowViewState.IdRef="Sequence_4">
+    <Sequence DisplayName="Web" sap:VirtualizedContainerService.HintSize="558,1127" sap2010:WorkflowViewState.IdRef="Sequence_4">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Edge" DisplayName="Attach Browser 'ACMESyste Page'" sap:VirtualizedContainerService.HintSize="496,891" sap2010:WorkflowViewState.IdRef="BrowserScope_1" InformativeScreenshot="f07443fa6ecdec73a67b1cadc07648e1" Selector="&lt;html app='msedge.exe' title='ACME System 1 - Log In' /&gt;">
+      <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Edge" DisplayName="Attach Browser 'ACMESyste Page'" sap:VirtualizedContainerService.HintSize="496,1016" sap2010:WorkflowViewState.IdRef="BrowserScope_1" InformativeScreenshot="f07443fa6ecdec73a67b1cadc07648e1" Selector="&lt;html app='msedge.exe' title='ACME System 1 - Log In' /&gt;">
         <ui:BrowserScope.Body>
           <ActivityAction x:TypeArguments="x:Object">
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
             </ActivityAction.Argument>
-            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="462,744" sap2010:WorkflowViewState.IdRef="Sequence_3">
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="462,869" sap2010:WorkflowViewState.IdRef="Sequence_3">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
+              <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="400,85" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[&quot;Ola... comecou...&quot;]" />
               <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" Activate="True" DisplayName="Type Into 'INPUT  email'" EmptyField="False" sap:VirtualizedContainerService.HintSize="400,135" sap2010:WorkflowViewState.IdRef="TypeInto_1" SendWindowMessages="False" SimulateType="True" Text="egameiro@gmail.com">
                 <ui:TypeInto.Target>
                   <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="3139feb7-1157-42b8-9edc-21686988cdec" InformativeScreenshot="2a5f950ffe8b705ce392528fdeaf4d29" Selector="&lt;webctrl id='email' tag='INPUT' /&gt;" WaitForReady="COMPLETE">
